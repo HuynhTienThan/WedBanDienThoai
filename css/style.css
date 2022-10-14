@@ -1,0 +1,223 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ body{
+ }
+.clear{
+    clear: both;
+}
+
+.head{
+    position: fixed;
+    z-index: 5;
+    top: 0;
+    width: 100%;
+    background-color: rgb(32, 30, 30);
+    height: 50px;
+}
+.head .logo{
+    width: 35px;
+    margin-top: 7px;
+}
+.head li {
+    float: left;
+    display: inline-block; 
+    padding: 0 15px;
+ }
+.head li >a{
+    color: rgba(255, 255,255, 0.6); 
+    line-height: 50px;
+    text-decoration: none;
+}
+.head li >a:hover{
+    text-decoration: none;
+    color: white;
+}
+.hover-decoration:hover{
+    text-decoration: underline !important;
+}
+.head .list-san-pham{
+    position: absolute;
+    background-color: white;
+    width: 171px;
+    left: 171px;
+    top: 43px;
+    border-radius: 2px;
+    box-shadow:-1px 1px 10px rgb(51, 50, 50);
+    display: none;
+}
+.head .list-san-pham >div{
+    padding: 8px 25px;
+}
+.head .list-san-pham a{
+    width: 171px;
+    color: black;
+}
+.head .san-pham:hover .list-san-pham{
+    display: block;
+}
+.head .list-san-pham >div:hover{
+    cursor: pointer;
+    background-color: #ccc;
+}
+.head .js-tai-khoan{
+    color: rgba(255, 255,255, 0.6); 
+    line-height: 50px;
+    cursor: pointer;
+}
+.head .js-tai-khoan:hover{
+    color: white !important;
+}
+.head .form-dang-nhap{
+    position: absolute;
+    top: 43px;
+    border-radius: 2px;
+    background-color: white;
+    padding: 2px 15px;
+    box-shadow:-1px 1px 10px rgb(51, 50, 50);
+    display: none;
+}
+.head .form-dang-nhap form>div{
+    margin: 10px 0;
+}
+.head .form-dang-nhap form div:last-child{
+    border-top: 1px
+    solid rgba(0,0,0,0.1);
+    padding-top: 10px;
+}
+.head .form-dang-nhap .login{
+    color: rgb(255, 255, 255);
+    background-color: rgb(47, 32, 185);
+    width: 92px;
+    height: 37px;
+}
+.head .form-dang-nhap .login:hover{
+    cursor: pointer;
+    opacity: 0.9;
+}
+.head-search{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 370px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.head-search .shop{
+    float: left;
+    background-color: rgba(35, 177, 35,0.8);
+    border-radius: 4px;
+    margin-right: 5px;
+    padding: 5px 10px;
+    color: white;
+}
+.head-search .search-text{
+    float: left;
+    padding: 6px 11px;
+
+}
+.head-search .search-box{
+    float: left;
+    background-color: rgba(35, 177, 35,0.8);
+    padding: 6px 10px;
+    border-radius: 0 4px 4px 0;
+    color: white;
+}
+.head-search .shop:hover ,
+.head-search .search-box:hover{
+    opacity: 0.8;
+    cursor: pointer;
+}
+.anh{
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+
+}
+.image-selector { 
+}
+.body{
+    width: 85%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.list-selector-body{
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 26.16339915%;
+}
+.list-selector-body >p{
+    font-weight: bold;
+    font-style: 17px;
+    line-height: 30px;
+}
+.list-selector-body .list-selector{
+    color: rgb(16 150 222);
+    padding-left: 15px;
+    line-height: 30px;
+    border-radius: 3px;
+    user-select: none;
+}
+.list-selector-body .list-selector:hover{
+    cursor: pointer;
+    background-color: rgb(16 150 222) !important; 
+    color: white !important;
+}
+.list-phone{
+    position: relative;
+    width: 73.82660085%;
+    top: -240px;
+    left: 26.16339915%;
+}
+.list-phone .information{
+    position: relative;
+    float: left;
+    width: calc(100%/4);
+    margin-top: 25px;
+    padding-left: 15px;
+    padding-right: 15px;
+    height: 576.66px;
+    display:  none;
+}
+.list-phone .information img{
+}
+.list-phone .information img:hover{
+    transform:scale(1.1,1.1);
+}
+
+.list-phone .info{
+    padding: 0 20px;
+}
+.list-phone .name{
+    font-size: 28px;
+    padding-top: 20px;
+    padding-bottom: 15px;
+}
+.list-phone .price{
+    color: red;
+    font-size: 25px;
+    padding-bottom: 15px;
+}
+.list-phone .content{
+    line-height: 1.5;
+    padding-bottom: 30px;
+}
+.buy{
+    position: absolute;
+    bottom: 0;
+    color: white;
+    background-color: rgb(16 150 222);
+    margin-left: 20px;
+    padding: 12px;
+    width: 110px;
+    border-radius: 3px;
+}
+.buy:hover{
+    opacity: 0.7;
+    cursor: pointer;
+}
