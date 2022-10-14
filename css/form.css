@@ -1,0 +1,58 @@
+*{
+    padding: 0;
+    margin: auto;
+}
+.container{
+    width: 45%;
+    margin-top: 100px;
+    /* background-image: linear-gradient(to bottom right, rgb(79, 33, 243),rgb(75, 72, 72)); */
+}
+body{
+    background-image: url(../img/imager_3589.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+h1, label{
+    color: DodgerBlue;
+}
+input[type=text], input[type=password] {
+    width: calc(100% - 15px);
+    margin: 5px 0 22px 0;
+    display: inline-block;
+    border: none;
+    /* resize: vertical; */
+    padding:15px;
+    border-radius:15px;
+    border:0;
+    box-shadow:4px 4px 10px rgba(0,0,0,0.2);
+}
+input[type=text]:focus, input[type=password]:focus {
+    outline: none;
+}
+hr {
+    border: 1px solid #f1f1f1;
+    margin-bottom: 25px;
+}
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin-top: 9px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    opacity: 0.9;
+}
+button:hover {
+    opacity:1;
+}
+/* .cancelbtn {
+    padding: 14px 20px;
+    background-color: #f44336;
+} */
+.signupbtn {
+    width: 100%;
+    border-radius:15px;
+    border:0;
+    box-shadow:4px 4px 10px rgba(0,0,0,0.2);
+}

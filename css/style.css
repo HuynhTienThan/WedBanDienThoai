@@ -168,6 +168,11 @@
     background-color: rgb(16 150 222) !important; 
     color: white !important;
 }
+.report_text{
+    display: none;
+    margin-top: 30px;
+    margin-left: 20px;
+}
 .list-phone{
     position: relative;
     width: 73.82660085%;
