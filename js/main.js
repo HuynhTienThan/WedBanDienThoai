@@ -25,8 +25,21 @@ chuyenDoi = function (){
 }
 setInterval (chuyenDoi,3000)
 
-//Tim2 
-
+//Tìm Kiếm Sản Phẩm
+document.querySelector('.search-box').onclick = function(){
+    var value=document.querySelector('#txtSearch').value
+    console.log(value)
+    document.querySelector('#txtSearch').value=""
+    var listPhone=["Xiaomi Redmi Note 7 (64GB)","Samsung Galaxy A50 (64GB)","iPhone 6s Plus (32GB)","Samsung Galaxy A10","OPPO A5s","Vivo Y15","iPhone Xs Max (64GB)","iPhone X (256GB)"]
+    var listClassPhone=[".list-phone .phone1",".list-phone .phone2",".list-phone .phone3",".list-phone .phone4",".list-phone .phone5",".list-phone .phone6",".list-phone .phone7",".list-phone .phone8",]
+    for (var i = 0;i<listPhone.length;i++){
+        if(listPhone[i].includes(value)){
+            document.querySelector(listClassPhone[i]).setAttribute("style","display:block;")
+        }else{
+            document.querySelector(listClassPhone[i]).setAttribute("style","display:none;")
+        }
+    }
+}
 
 // selector list phone
 var hangMoiVe = document.querySelector('.body .hang-moi-ve')
