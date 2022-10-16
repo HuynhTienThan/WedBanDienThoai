@@ -225,3 +225,58 @@
     opacity: 0.7;
     cursor: pointer;
 }
+
+
+.row{
+    width: 100%;
+}
+.row::before,.row::after{
+    display: table;
+    content: "";
+}
+.row::after{
+    clear: both;
+}
+.col{
+    float: left;
+}
+footer{
+    /* background-color: rgb(32, 30, 30); */
+    background: linear-gradient(rgb(32, 30, 30),rgba(0, 0, 0,0.9));
+    color: rgb(212, 196, 196)
+}
+footer .container_footer{
+    user-select: none;
+    margin: auto;
+    margin-top: 20px;
+    text-align: left;
+    padding: 50px 100px;
+}
+.container_footer i{
+    margin-right: 20px;
+}
+.container_footer .thong_tin{
+    width: 45%;
+}
+.container_footer .thong_tin .email:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
+.container_footer .san_pham{
+    width: 25%;
+}
+.container_footer .san_pham ul li:hover{
+    cursor: pointer;
+    opacity: 0.6;
+}
+.container_footer .fanpage{
+    width: 30%;
+}
+.container_footer .fanpage i{
+    opacity: 0.7;
+    user-select: none;
+}
+.container_footer .fanpage i:hover{
+    opacity: 1;
+    cursor: pointer;
+}

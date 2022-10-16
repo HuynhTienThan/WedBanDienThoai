@@ -4,30 +4,120 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đăng Ký</title>
     <link rel="stylesheet" href="../css/form.css">
+    <script src="../js/jquery-3.6.1.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+
 </head>
 <body>
     <div class="container">
-        <form action="" >
+        <form id="form" action="" >
             <h1>Form Đăng Ký</h1>
             <p>Xin hãy nhập biểu mẫu bên dưới để đăng ký.</p>
             <hr>
             <label ><b>Họ Và Tên</b></label>
-            <input type="text" placeholder="Nhập Họ Và Tên">
+            <input type="text" id="TEN" placeholder="Nhập Họ Và Tên">
+            <img class="tick ten_tick" src="../img/tickxanh.png" width="25px" alt="">
             <label ><b>Email</b></label>
-            <input type="text" placeholder="Nhập Email">
+            <input type="text" id="EMAIL" placeholder="Nhập Email">
+            <img class="tick email_tick" src="../img/tickxanh.png" width="25px" alt="">
             <label><b>Mã Số Sinh Viên</b></label>
-            <input type="text" placeholder="Nhập Mã Số Sinh Viên" >
+            <input type="text" id="MSSV" placeholder="Nhập Mã Số Sinh Viên" >
+            <img class="tick mssv_tick" src="../img/tickxanh.png" width="25px" alt="">
             <label ><b>Số Điện Thoại</b></label>
-            <input type="text" placeholder="Nhập Số Điện Thoại">
+            <input type="text" id="SDT" placeholder="Nhập Số Điện Thoại">
+            <img class="tick sdt_tick" src="../img/tickxanh.png" width="25px" alt="">
             <label ><b>Mật Khẩu</b></label>
-            <input type="password">
+            <input id="PASSWORD" type="password">
             <label ><b>Nhập Lại Mật Khẩu</b></label>
-            <input type="password">
-            <button type="submit" class="signupbtn">Sign Up</button>
+            <input id="NHAP_LAI_PASSWORD" type="password">
+            <a class="signupbtn" href="#">Sign Up</a>
         </form>
 
     </div>
-        
+    <script>
+        $(document).ready(function() {
+            $("#SDT").blur(function() {
+                var mauKT=/^[0-9]{10}$/
+                if (mauKT.test($("#SDT").val())){
+                    document.querySelector(".sdt_tick").style.display="inline"
+                    document.querySelector(".sdt_tick").src="../img/tickxanh.png"
+                    document.querySelector("#SDT").style.border="solid 1px lime"
+                }else if($("#SDT").val()==""){
+                    document.querySelector(".sdt_tick").style.display="inline"
+                    document.querySelector(".sdt_tick").src="../img/tickdo.png"
+                    document.querySelector("#SDT").style.border="solid 1px red"
+                }else{
+                    document.querySelector(".sdt_tick").style.display="inline"
+                    document.querySelector(".sdt_tick").src="../img/tickdo.png"
+                    document.querySelector("#SDT").style.border="solid 1px red"
+                }
+            })
+            $("#MSSV").blur(function() {
+                var mauKT=/^[0-9]{8}$/
+                if (mauKT.test($("#MSSV").val())){
+                    document.querySelector(".mssv_tick").style.display="inline"
+                    document.querySelector(".mssv_tick").src="../img/tickxanh.png"
+                    document.querySelector("#MSSV").style.border="solid 1px lime"
+                }else if($("#MSSV").val()==""){
+                    document.querySelector(".mssv_tick").style.display="inline"
+                    document.querySelector(".mssv_tick").src="../img/tickdo.png"
+                    document.querySelector("#MSSV").style.border="solid 1px red"
+                }else{
+                    document.querySelector(".mssv_tick").style.display="inline"
+                    document.querySelector(".mssv_tick").src="../img/tickdo.png"
+                    document.querySelector("#MSSV").style.border="solid 1px red"
+                }
+            })
+            $("#TEN").blur(function() {
+                var mauKT=/^[A-Z][a-z]+(\s[A-Z][a-z]+)*$/
+                if (mauKT.test($("#TEN").val())){
+                    document.querySelector(".ten_tick").style.display="inline"
+                    document.querySelector(".ten_tick").src="../img/tickxanh.png"
+                    document.querySelector("#TEN").style.border="solid 1px lime"
+                }else if($("#TEN").val()==""){
+                    document.querySelector(".ten_tick").style.display="inline"
+                    document.querySelector(".ten_tick").src="../img/tickdo.png"
+                    document.querySelector("#TEN").style.border="solid 1px red"
+                }else{
+                    document.querySelector(".ten_tick").style.display="inline"
+                    document.querySelector(".ten_tick").src="../img/tickdo.png"
+                    document.querySelector("#TEN").style.border="solid 1px red"
+                }
+            })
+            $("#EMAIL").blur(function() {
+                var mauKT=/^[a-zA-Z0-9]+(@gmail\.com)$/
+                if (mauKT.test($("#EMAIL").val())){
+                    document.querySelector(".email_tick").style.display="inline"
+                    document.querySelector(".email_tick").src="../img/tickxanh.png"
+                    document.querySelector("#EMAIL").style.border="solid 1px lime"
+                }else if($("#EMAIL").val()==""){
+                    document.querySelector(".email_tick").style.display="inline"
+                    document.querySelector(".email_tick").src="../img/tickdo.png"
+                    document.querySelector("#EMAIL").style.border="solid 1px red"
+                }else{
+                    document.querySelector(".email_tick").style.display="inline"
+                    document.querySelector(".email_tick").src="../img/tickdo.png"
+                    document.querySelector("#EMAIL").style.border="solid 1px red"
+                }
+            })
+            $(".signupbtn").click(function() {
+                if (document.querySelector(".sdt_tick").src.indexOf("img/tickdo.png")!=-1 || document.querySelector(".ten_tick").src.indexOf("img/tickdo.png")!=-1 || document.querySelector(".email_tick").src.indexOf("img/tickdo.png")!=-1 || document.querySelector(".mssv_tick").src.indexOf("img/tickdo.png")!=-1){
+                    alert("Vui lòng điền đầy đủ và đúng thông tin")
+                }
+                else if(document.querySelector(".sdt_tick").src.indexOf("img/tickxanh.png")!=-1 && document.querySelector(".ten_tick").src.indexOf("img/tickxanh.png")!=-1 && document.querySelector(".email_tick").src.indexOf("img/tickxanh.png")!=-1 && document.querySelector(".mssv_tick").src.indexOf("img/tickxanh.png")!=-1){
+                    if($("#PASSWORD").val()=="" || $("#NHAP_LAI_PASSWORD").val()==""){
+                        alert("Vui lòng nhập mật khẩu ")
+                    }else if($("#PASSWORD").val()!=$("#NHAP_LAI_PASSWORD").val()){
+                        alert("Vui lòng nhập lại mật khẩu chính xác")
+                    }else{
+                        document.querySelector(".signupbtn").href="index.html"
+                        alert("Đăng ký thành công")
+                    }
+                }
+            })
+        })
+    </script>  
 </body>
 </html>

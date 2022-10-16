@@ -53,6 +53,7 @@ document.querySelector('.search-box').onclick = function(){
     }
 }
 
+
 // selector list phone
 var hangMoiVe = document.querySelector('.body .hang-moi-ve')
 var apple = document.querySelector('.body .apple')
