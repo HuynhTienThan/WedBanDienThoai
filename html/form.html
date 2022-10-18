@@ -13,25 +13,38 @@
 <body>
     <div class="container">
         <form id="form" action="" >
-            <h1>Form Đăng Ký</h1>
-            <p>Xin hãy nhập biểu mẫu bên dưới để đăng ký.</p>
+            <h1>Đăng Ký</h1>
+            <p>Xin hãy nhập biểu mẫu bên dưới để đăng ký</p>
             <hr>
             <label ><b>Họ Và Tên</b></label>
             <input type="text" id="TEN" placeholder="Nhập Họ Và Tên">
             <img class="tick ten_tick" src="../img/tickxanh.png" width="25px" alt="">
+            <div class="report report-ten"></div>
+
             <label ><b>Email</b></label>
             <input type="text" id="EMAIL" placeholder="Nhập Email">
             <img class="tick email_tick" src="../img/tickxanh.png" width="25px" alt="">
+            <div class="report report-email"></div>
+
+
             <label><b>Mã Số Sinh Viên</b></label>
             <input type="text" id="MSSV" placeholder="Nhập Mã Số Sinh Viên" >
             <img class="tick mssv_tick" src="../img/tickxanh.png" width="25px" alt="">
+            <div class="report report-mssv"></div>
+
+
             <label ><b>Số Điện Thoại</b></label>
             <input type="text" id="SDT" placeholder="Nhập Số Điện Thoại">
             <img class="tick sdt_tick" src="../img/tickxanh.png" width="25px" alt="">
+            <div class="report report-sdt"></div>
+
+
             <label ><b>Mật Khẩu</b></label>
             <input id="PASSWORD" type="password">
             <label ><b>Nhập Lại Mật Khẩu</b></label>
             <input id="NHAP_LAI_PASSWORD" type="password">
+
+
             <a class="signupbtn" href="#">Sign Up</a>
         </form>
 
@@ -44,14 +57,18 @@
                     document.querySelector(".sdt_tick").style.display="inline"
                     document.querySelector(".sdt_tick").src="../img/tickxanh.png"
                     document.querySelector("#SDT").style.border="solid 1px lime"
+                    document.querySelector(".report-sdt").innerHTML=""
                 }else if($("#SDT").val()==""){
                     document.querySelector(".sdt_tick").style.display="inline"
                     document.querySelector(".sdt_tick").src="../img/tickdo.png"
                     document.querySelector("#SDT").style.border="solid 1px red"
+                    document.querySelector(".report-sdt").innerHTML="bắt buộc nhập"
                 }else{
                     document.querySelector(".sdt_tick").style.display="inline"
                     document.querySelector(".sdt_tick").src="../img/tickdo.png"
                     document.querySelector("#SDT").style.border="solid 1px red"
+                    document.querySelector(".report-sdt").innerHTML="phải nhập đúng 10 chữ số"
+
                 }
             })
             $("#MSSV").blur(function() {
@@ -60,14 +77,17 @@
                     document.querySelector(".mssv_tick").style.display="inline"
                     document.querySelector(".mssv_tick").src="../img/tickxanh.png"
                     document.querySelector("#MSSV").style.border="solid 1px lime"
+                    document.querySelector(".report-mssv").innerHTML=""
                 }else if($("#MSSV").val()==""){
                     document.querySelector(".mssv_tick").style.display="inline"
                     document.querySelector(".mssv_tick").src="../img/tickdo.png"
                     document.querySelector("#MSSV").style.border="solid 1px red"
+                    document.querySelector(".report-mssv").innerHTML="bắt buộc nhập"
                 }else{
                     document.querySelector(".mssv_tick").style.display="inline"
                     document.querySelector(".mssv_tick").src="../img/tickdo.png"
                     document.querySelector("#MSSV").style.border="solid 1px red"
+                    document.querySelector(".report-mssv").innerHTML="phải nhập đúng 8 chữ số"
                 }
             })
             $("#TEN").blur(function() {
@@ -76,14 +96,17 @@
                     document.querySelector(".ten_tick").style.display="inline"
                     document.querySelector(".ten_tick").src="../img/tickxanh.png"
                     document.querySelector("#TEN").style.border="solid 1px lime"
+                    document.querySelector(".report-ten").innerHTML=""
                 }else if($("#TEN").val()==""){
                     document.querySelector(".ten_tick").style.display="inline"
                     document.querySelector(".ten_tick").src="../img/tickdo.png"
                     document.querySelector("#TEN").style.border="solid 1px red"
+                    document.querySelector(".report-ten").innerHTML="bắt buộc nhập"
                 }else{
                     document.querySelector(".ten_tick").style.display="inline"
                     document.querySelector(".ten_tick").src="../img/tickdo.png"
                     document.querySelector("#TEN").style.border="solid 1px red"
+                    document.querySelector(".report-ten").innerHTML="viết hoa chữ cái đầu và không dấu"
                 }
             })
             $("#EMAIL").blur(function() {
@@ -92,14 +115,17 @@
                     document.querySelector(".email_tick").style.display="inline"
                     document.querySelector(".email_tick").src="../img/tickxanh.png"
                     document.querySelector("#EMAIL").style.border="solid 1px lime"
+                    document.querySelector(".report-email").innerHTML=""
                 }else if($("#EMAIL").val()==""){
                     document.querySelector(".email_tick").style.display="inline"
                     document.querySelector(".email_tick").src="../img/tickdo.png"
                     document.querySelector("#EMAIL").style.border="solid 1px red"
+                    document.querySelector(".report-email").innerHTML="bắt buộc nhập"
                 }else{
                     document.querySelector(".email_tick").style.display="inline"
                     document.querySelector(".email_tick").src="../img/tickdo.png"
                     document.querySelector("#EMAIL").style.border="solid 1px red"
+                    document.querySelector(".report-email").innerHTML="sai cú pháp vd: usename111@gmai.com"
                 }
             })
             $(".signupbtn").click(function() {

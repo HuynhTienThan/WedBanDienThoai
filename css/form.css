@@ -20,7 +20,7 @@ label{
     display: block;
 }
 input[type=text], input[type=password] {
-    width: 90%;
+    width: 80%;
     margin: 5px 0 22px 0;
     display: inline-block;
     border: none;
@@ -63,4 +63,19 @@ hr {
     box-shadow:4px 4px 10px rgba(0,0,0,0.2);
     text-decoration: none;
     text-align: center;
+}
+.report{
+    color: red;
+    position: relative;
+    top: -15px;
+    left: 6px;
+}
+/* mobile */
+@media screen and (max-width: 740px) {
+    .container{
+        width: 90%;
+    }
+    input[type=text], input[type=password] {
+        width: 80%;
+    }
 }

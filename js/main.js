@@ -28,15 +28,42 @@ setInterval (chuyenDoi,3000)
 //Tìm Kiếm Sản Phẩm
 var listClassPhone=[".list-phone .phone1",".list-phone .phone2",".list-phone .phone3",".list-phone .phone4",".list-phone .phone5",".list-phone .phone6",".list-phone .phone7",".list-phone .phone8",]
 
-document.querySelector('.search-box').onclick = function(){
+// document.querySelector('.search-box').onclick = function(){
+//     var value=document.querySelector('#txtSearch').value
+//     console.log(value)
+//     document.querySelector('#txtSearch').value=""
+//     var timThay=false
+//     var listPhone=["Xiaomi Redmi Note 7 (64GB)","Samsung Galaxy A50 (64GB)","iPhone 6s Plus (32GB)","Samsung Galaxy A10","OPPO A5s","Vivo Y15","iPhone Xs Max (64GB)","iPhone X (256GB)"]
+//     var listClassPhone=[".list-phone .phone1",".list-phone .phone2",".list-phone .phone3",".list-phone .phone4",".list-phone .phone5",".list-phone .phone6",".list-phone .phone7",".list-phone .phone8",]
+//     for (var i = 0;i<listPhone.length;i++){
+//         if(listPhone[i].includes(value)){
+//             document.querySelector(listClassPhone[i]).setAttribute("style","display:block;")
+//             timThay=true
+//         }else{
+//             document.querySelector(listClassPhone[i]).setAttribute("style","display:none;")
+            
+//         }
+//     }
+//     if(!timThay){
+//         document.querySelector('.report_text').setAttribute("style","display:block;")
+//         document.querySelector('.report_text').innerHTML='Rất tiếc, chúng tôi không tìm thấy kết quả nào phù hợp với từ khóa "'+"<strong>"+value+'"</strong>'
+//     }else{
+//         document.querySelector('.report_text').setAttribute("style","display:none;")
+
+//     }
+// }
+
+function TimKiemSanPham(){
     var value=document.querySelector('#txtSearch').value
-    console.log(value)
     document.querySelector('#txtSearch').value=""
     var timThay=false
     var listPhone=["Xiaomi Redmi Note 7 (64GB)","Samsung Galaxy A50 (64GB)","iPhone 6s Plus (32GB)","Samsung Galaxy A10","OPPO A5s","Vivo Y15","iPhone Xs Max (64GB)","iPhone X (256GB)"]
-    var listClassPhone=[".list-phone .phone1",".list-phone .phone2",".list-phone .phone3",".list-phone .phone4",".list-phone .phone5",".list-phone .phone6",".list-phone .phone7",".list-phone .phone8",]
+    var listClassPhone=[".list-phone .phone1",".list-phone .phone2",".list-phone .phone3",".list-phone .phone4",".list-phone .phone5",".list-phone .phone6",".list-phone .phone7",".list-phone .phone8"]
     for (var i = 0;i<listPhone.length;i++){
         if(listPhone[i].includes(value)){
+            console.log(value)
+            console.log(listPhone[i])
+            console.log(listClassPhone[i])
             document.querySelector(listClassPhone[i]).setAttribute("style","display:block;")
             timThay=true
         }else{
@@ -172,3 +199,43 @@ oppo.onclick = function(){
     }
 }
 
+//mobile
+function TimKiemSanPhamMobile(){
+    var value_mobile=document.querySelector('#txtSearch-mobile').value
+    document.querySelector('#txtSearch-mobile').value=""
+    console.log("value_mobile1: ",value_mobile)
+    var timThay=false
+    var listPhone=["Xiaomi Redmi Note 7 (64GB)","Samsung Galaxy A50 (64GB)","iPhone 6s Plus (32GB)","Samsung Galaxy A10","OPPO A5s","Vivo Y15","iPhone Xs Max (64GB)","iPhone X (256GB)"]
+    var listClassPhone=[".list-phone .phone1",".list-phone .phone2",".list-phone .phone3",".list-phone .phone4",".list-phone .phone5",".list-phone .phone6",".list-phone .phone7",".list-phone .phone8"]
+    for (var i = 0;i<listPhone.length;i++){
+        if(listPhone[i].includes(value_mobile)){
+            console.log("value_mobile2: ",value_mobile)
+            console.log(listPhone[i])
+            console.log(listClassPhone[i])
+            document.querySelector(listClassPhone[i]).setAttribute("style","display:block;")
+            timThay=true
+        }else{
+            document.querySelector(listClassPhone[i]).setAttribute("style","display:none;")
+            
+        }
+    }
+    if(!timThay){
+        document.querySelector('.report_text').setAttribute("style","display:block;")
+        document.querySelector('.report_text').innerHTML='Rất tiếc, chúng tôi không tìm thấy kết quả nào phù hợp với từ khóa "'+"<strong>"+value_mobile+'"</strong>'
+    }else{
+        document.querySelector('.report_text').setAttribute("style","display:none;")
+    }
+ 
+}
+// document.querySelector('.search-icon-mobile').onlick=TimKiemSanPhamMobile()
+// $('.search-text-mobile').focus(function(){
+//     $(document).keypress(function(event){
+//             var keycode = (event.keyCode ? event.keyCode : event.which);
+//             if (keycode == '13') {
+//                 document.querySelector('.search-text-mobile').style.display='none'
+//                 document.querySelector('.search-icon-mobile').style.display='block'
+//                 TimKiemSanPhamMobile()
+//                 return
+//             }
+//         });
+// })

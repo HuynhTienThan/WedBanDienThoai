@@ -3,8 +3,6 @@
     padding: 0;
     box-sizing: border-box;
 }
- body{
- }
 .clear{
     clear: both;
 }
@@ -190,7 +188,8 @@
     display:  none;
 }
 .list-phone .information img:hover{
-    transform:scale(1.1,1.1);
+    /* transform:scale(1.1,1.1); */
+    transform:translateX(0px) translateY(-10px);
     transition: 0.5s;
 }
 
@@ -251,6 +250,7 @@ footer .container_footer{
     margin-top: 20px;
     text-align: left;
     padding: 50px 100px;
+    padding-right: 0;
 }
 .container_footer i{
     margin-right: 20px;
@@ -280,3 +280,4 @@ footer .container_footer{
     opacity: 1;
     cursor: pointer;
 }
+

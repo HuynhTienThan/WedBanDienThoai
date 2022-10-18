@@ -1,0 +1,118 @@
+@media screen and (min-width: 1024px) {
+    .search-icon,
+    .search-icon-mobile,
+    .search-text-mobile
+    {
+        display: none;
+    }
+    
+}
+/* tablet>=740px & < 1024px */
+@media screen and (max-width: 1024px ) and ( min-width: 740px) {
+    .head-search{
+        display: none;
+    }
+    .search-icon-mobile{
+        position: absolute;
+        top: 0;
+        right: 0;
+        background-color: rgba(35, 177, 35,0.8);
+        padding: 15.5px 15.5px;
+        color: white;
+    }
+    .search-text-mobile{
+        position: absolute;
+        top: 0;
+        right: 0;
+        right: 46px;
+        width: 30%;
+        height: 100%;
+        padding: 0 10px;
+    }
+    .list-phone .information{
+        width: calc(100%/2);
+        margin-bottom: 50px;
+    }
+    .container_footer i{
+        margin-right: 2px;
+    }
+    footer .container_footer{
+        padding: 20px 20px;
+    }
+    .container_footer .thong_tin{
+        width:60%;
+    }
+    .container_footer .san_pham{
+        width: 20%;
+    }
+    .container_footer .fanpage{
+        width: 20%;
+    }
+    .container_footer .san_pham ul{
+        list-style: none;
+    }
+}
+    /*mobile */
+@media screen and (max-width: 740px) {
+    .head .menu li:nth-child(2),
+    .head .menu li:nth-child(3),
+    .head .menu li:nth-child(4)
+    {
+        display: none;
+    }
+    .head-search{
+        display: none;
+    }
+    .search-icon-mobile{
+        position: absolute;
+        top: 0;
+        right: 0;
+        background-color: rgba(35, 177, 35,0.8);
+        padding: 15.5px 15.5px;
+        color: white;
+    }
+    .search-text-mobile{
+        position: absolute;
+        top: 0;
+        right: 46px;
+        width: 40%;
+        float: right;
+        height: 100%;
+        padding: 0 10px;
+    }
+    #slide{
+        width: 100%;
+    }
+    .list-selector-body{
+        width: 100%;
+    }
+    .list-phone{
+        width: 100%;
+        top: 0;
+        left: 0;
+    }
+    .list-phone .information{
+        width: 100%;
+        height: 700px;
+        margin-bottom: 100px;
+        padding: 10px;
+    }
+    .container_footer .thong_tin{
+        width: 100%;
+    }
+    .container_footer .san_pham{
+        width: 100%;
+        margin-top: 20px;
+    }
+    .container_footer .fanpage{
+        width: 100%;
+        margin-top: 20px;
+    }
+    footer .container_footer{
+        padding: 20px 10px;
+        text-align: center;
+    }
+    .container_footer i{
+        margin-right: 2px;
+    }
+}

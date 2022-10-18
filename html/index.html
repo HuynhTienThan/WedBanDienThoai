@@ -9,15 +9,16 @@
     <!-- <link rel="stylesheet" href="../css/bootstrap.min.css"> -->
     <script src="../js/jquery-3.6.1.min.js"></script>
     <script src="../js/bootstrap.min.js"></script>
-    <link rel="stylesheet" href="../themify-icons/themify-icons.css">
     <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/responsive.css">
+    <link rel="stylesheet" href="../themify-icons/themify-icons.css">
     
     <title>Huỳnh Tiến Thân-20092611</title>
 </head>
 
 <body>
     <div class="head">
-        <ul>
+        <ul class="menu">
             <li> <img class="logo" src="../img/logo.png" alt="logo"></li>
             <li><a href="#">Trang Chủ</a></li>
             <li class="san-pham">
@@ -56,12 +57,17 @@
             <div class="shop"><i class="ti-shopping-cart"></i>2</div>
             <div>
                 <input class="search-text" id="txtSearch" style="outline: none;" type="text" placeholder="Nhập từ khóa tìm kiếm" name="" >
-                <div class="search-box">
+                <div class="search-box" onclick="TimKiemSanPham()">
                     <i class="ti-search"></i>  Tìm Kiếm
                 </div>
             </div>
             <div class="clear"></div>
         </div>
+        <div class="search-icon-mobile" onclick="TimKiemSanPhamMobile()">
+                <i class="ti-search"></i>
+        </div>
+        <input class="search-text-mobile" id="txtSearch-mobile" style="outline: none;" type="text" placeholder="Nhập từ khóa tìm kiếm" name="" >
+
     </div>
     <div class="anh">
         <img id="slide" src="../img/slide1.png" width="85%"  alt="slide"> 
