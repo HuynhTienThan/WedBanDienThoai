@@ -280,4 +280,35 @@ footer .container_footer{
     opacity: 1;
     cursor: pointer;
 }
+/* .gio-hang{
+    position: fixed;
+    width: 500px;
+    background-color: #ccc;
+    top: 48px;
+    right: 105px;
+    padding: 5px 5px;
+    z-index: 100;
+    font-weight: 900;
+    display: none;
+}
+.gio-hang .san-pham{
+    width: 50%;
+}
+.gio-hang .gia{
+    width: 20%;
+}
+.gio-hang .so-luong{
+    width: 15%;
+}
+.gio-hang .chon{
+    width: 10%;
+}
+.gio-hang .row{
+    margin-top: 20px;
+}
+.dat-hang{
+    color: white;
+    background-color: rgba(35, 177, 35,0.8);
+    position: fixed;
+} */
 
