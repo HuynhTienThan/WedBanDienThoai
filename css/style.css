@@ -216,9 +216,10 @@
     color: white;
     background-color: rgb(16 150 222);
     margin-left: 20px;
-    padding: 12px;
-    width: 110px;
-    border-radius: 3px;
+    padding: 18px;
+    width: 150px;
+    border-radius: 5px;
+    font-size: 12px;
 }
 .buy:hover{
     opacity: 0.7;
@@ -280,16 +281,21 @@ footer .container_footer{
     opacity: 1;
     cursor: pointer;
 }
-/* .gio-hang{
+.dat-hang{
     position: fixed;
     width: 500px;
-    background-color: #ccc;
+    border-radius: 3px;
+    box-shadow: -1px 1px 10px rgb(51 50 50);
+    background-color: white;
     top: 48px;
     right: 105px;
     padding: 5px 5px;
     z-index: 100;
+}
+.gio-hang{
+    position: relative;
     font-weight: 900;
-    display: none;
+    /* display: none ; */
 }
 .gio-hang .san-pham{
     width: 50%;
@@ -303,12 +309,51 @@ footer .container_footer{
 .gio-hang .chon{
     width: 10%;
 }
+.gio-hang .chon:hover{
+    opacity: 0.7;
+    cursor: pointer;
+    user-select: none;
+    color: red;
+}
 .gio-hang .row{
     margin-top: 20px;
 }
-.dat-hang{
+.dat-hang .tong-tien{
+    width: 100%;
+    float: right;
+    border-top: 1px solid black;
+    text-align: right;
+    padding: 10px;
+    margin-top: 10px;
+}
+.dat-hang .thanh-toan{
     color: white;
     background-color: rgba(35, 177, 35,0.8);
-    position: fixed;
-} */
+    width: 100px;
+    height: 30px;
+    margin-top: 5px;
+    text-align: center;
+    border-radius: 7px;
+    line-height: 30px;
+    float: right;
+}
+.dat-hang .thanh-toan:hover,
+.dat-hang .xoa-tat-ca:hover{
+    user-select: none;
+    opacity: 0.8;
+    cursor: pointer;
+}
+.dat-hang .xoa-tat-ca{
+    color: white;
+    background-color: red;
+    margin-right: 10px;
+    width: 100px;
+    height: 30px;
+    margin-top: 5px;
+    text-align: center;
+    border-radius: 7px;
+    line-height: 30px;
+    float: right;
+
+}
 
