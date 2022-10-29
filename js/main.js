@@ -170,8 +170,58 @@ oppo.onclick = function(){
         }
     }
 }
-
-//đếm số lượng hàng hóa
+//Hiển thị thôn tin chi tiết
+function XoaClassPhone(){
+    document.querySelector('.TT-chi-tiet .content').classList.remove('phone1')
+    document.querySelector('.TT-chi-tiet .content').classList.remove('phone2')
+    document.querySelector('.TT-chi-tiet .content').classList.remove('phone3')
+    document.querySelector('.TT-chi-tiet .content').classList.remove('phone4')
+    document.querySelector('.TT-chi-tiet .content').classList.remove('phone5')
+    document.querySelector('.TT-chi-tiet .content').classList.remove('phone6')
+    document.querySelector('.TT-chi-tiet .content').classList.remove('phone7')
+    document.querySelector('.TT-chi-tiet .content').classList.remove('phone8')
+}
+displayAlls[0].onclick=function(){
+    document.querySelector('.TT-chi-tiet').style.display='block'
+    XoaClassPhone()
+    document.querySelector('.TT-chi-tiet .content').classList.add('phone1')
+}
+displayAlls[1].onclick=function(){
+    document.querySelector('.TT-chi-tiet').style.display='block'
+    XoaClassPhone()
+    document.querySelector('.TT-chi-tiet .content').classList.add('phone2')
+}
+displayAlls[2].onclick=function(){
+    document.querySelector('.TT-chi-tiet').style.display='block'
+    XoaClassPhone()
+    document.querySelector('.TT-chi-tiet .content').classList.add('phone3')
+}
+displayAlls[3].onclick=function(){
+    document.querySelector('.TT-chi-tiet').style.display='block'
+    XoaClassPhone()
+    document.querySelector('.TT-chi-tiet .content').classList.add('phone4')
+}
+displayAlls[4].onclick=function(){
+    document.querySelector('.TT-chi-tiet').style.display='block'
+    XoaClassPhone()
+    document.querySelector('.TT-chi-tiet .content').classList.add('phone5')
+}
+displayAlls[5].onclick=function(){
+    document.querySelector('.TT-chi-tiet').style.display='block'
+    XoaClassPhone()
+    document.querySelector('.TT-chi-tiet .content').classList.add('phone6')
+}
+displayAlls[6].onclick=function(){
+    document.querySelector('.TT-chi-tiet').style.display='block'
+    XoaClassPhone()
+    document.querySelector('.TT-chi-tiet .content').classList.add('phone7')
+}
+displayAlls[7].onclick=function(){
+    document.querySelector('.TT-chi-tiet').style.display='block'
+    XoaClassPhone()
+    document.querySelector('.TT-chi-tiet .content').classList.add('phone8')
+}
+//Thêm vào giỏ hàng
 function CapNhatTongTien(){
     var Tong=0
     Phones=document.querySelectorAll('.gio-hang .row .gia')
@@ -386,15 +436,127 @@ gioHang.style.display="none"
         gioHang.setAttribute("style","display:none !important;")
     }
 }
-//Xoá 1 sản phẩm
-// sanPhamCanXoas=document.querySelectorAll('.gio-hang .row .chon')
-// for (var i;i<length)
 //clear giỏ hàng
 function ClearGioHang(){
     document.querySelector('.gio-hang').innerHTML='<div class="row"><div class="col san-pham">Sản phẩm</div><div class="col gia">Giá</div><div class="col so-luong">Số lượng</div><div class="col chon">Chọn</div></div>'
     document.querySelector('.dat-hang .tong-tien').innerHTML='<strong>Tổng tiền: <strong>000</strong>₫</strong>'
     document.querySelector('.head-search .cout-shopping-cart').innerHTML=0
 }
+
+//Xóa 1 sản phẩm
+sanPhams=document.querySelectorAll('.gio-hang .chon')
+console.log(sanPhams)
+for (var i=1;i<sanPhams.length;i++){
+    sanPhams[i].onclick= function(i){
+        console.log(i)
+        alert("HTT")
+    }
+}
+// Thông tin chi tiết
+    //Chọn ảnh
+    anhPhoneS=document.querySelectorAll('.TT-chi-tiet .img-list>div>div')
+    anhPhoneS[0].onclick=function(){
+        anhPhoneS[0].setAttribute("style","border: 2px solid #ee4d2d;")
+        anhPhoneS[1].setAttribute("style","border: none")
+        anhPhoneS[2].setAttribute("style","border: none")
+        anhPhoneS[3].setAttribute("style","border: none")
+        anhPhoneS[4].setAttribute("style","border: none")
+        document.querySelector('.TT-chi-tiet .img .img-head img').src='./img/Xiaomi/1.jpg'
+    }
+    anhPhoneS[1].onclick=function(){
+        anhPhoneS[0].setAttribute("style","border: none")
+        anhPhoneS[1].setAttribute("style","border: 2px solid #ee4d2d;")
+        anhPhoneS[2].setAttribute("style","border: none")
+        anhPhoneS[3].setAttribute("style","border: none")
+        anhPhoneS[4].setAttribute("style","border: none")
+        document.querySelector('.TT-chi-tiet .img .img-head img').src='./img/Xiaomi/2.jpg'
+    }
+    anhPhoneS[2].onclick=function(){
+        anhPhoneS[0].setAttribute("style","border: none;")
+        anhPhoneS[1].setAttribute("style","border: none")
+        anhPhoneS[2].setAttribute("style","border: 2px solid #ee4d2d")
+        anhPhoneS[3].setAttribute("style","border: none")
+        anhPhoneS[4].setAttribute("style","border: none")
+        document.querySelector('.TT-chi-tiet .img .img-head img').src='./img/Xiaomi/3.jpg'
+    }
+    anhPhoneS[3].onclick=function(){
+        anhPhoneS[0].setAttribute("style","border: none;")
+        anhPhoneS[1].setAttribute("style","border: none")
+        anhPhoneS[2].setAttribute("style","border: none")
+        anhPhoneS[3].setAttribute("style","border: 2px solid #ee4d2d")
+        anhPhoneS[4].setAttribute("style","border: none")
+        document.querySelector('.TT-chi-tiet .img .img-head img').src='./img/Xiaomi/4.jpg'
+    }
+    anhPhoneS[4].onclick=function(){
+        anhPhoneS[0].setAttribute("style","border: none")
+        anhPhoneS[1].setAttribute("style","border: none")
+        anhPhoneS[2].setAttribute("style","border: none")
+        anhPhoneS[3].setAttribute("style","border: none")
+        anhPhoneS[4].setAttribute("style","border: 2px solid #ee4d2d;")
+        document.querySelector('.TT-chi-tiet .img .img-head img').src='./img/Xiaomi/5.jpg'
+    }
+    //Chọn Màu Sắc
+    mauSacS=document.querySelectorAll('.TT-chi-tiet .infor .mau .chon')
+    mauSacS[0].onclick=function(){
+        mauSacS[0].setAttribute("style","color: #ee4d2d;border: #ee4d2d 1px solid;")
+        mauSacS[1].setAttribute("style","color: #757575;border: 1px solid rgba(0,0,0,.09);")
+        mauSacS[2].setAttribute("style","color: #757575;border: 1px solid rgba(0,0,0,.09);")
+        document.querySelector('.TT-chi-tiet .img .img-head img').src='./img/Xiaomi/2.jpg'
+    }
+    mauSacS[1].onclick=function(){
+        mauSacS[1].setAttribute("style","color: #ee4d2d;border: #ee4d2d 1px solid;")
+        mauSacS[0].setAttribute("style","color: #757575;border: 1px solid rgba(0,0,0,.09);")
+        mauSacS[2].setAttribute("style","color: #757575;border: 1px solid rgba(0,0,0,.09);")
+        document.querySelector('.TT-chi-tiet .img .img-head img').src='./img/Xiaomi/3.jpg'
+    }
+    mauSacS[2].onclick=function(){
+        mauSacS[2].setAttribute("style","color: #ee4d2d;border: #ee4d2d 1px solid;")
+        mauSacS[1].setAttribute("style","color: #757575;border: 1px solid rgba(0,0,0,.09);")
+        mauSacS[0].setAttribute("style","color: #757575;border: 1px solid rgba(0,0,0,.09);")
+        document.querySelector('.TT-chi-tiet .img .img-head img').src='./img/Xiaomi/4.jpg'
+    }
+    //tăng giảm số lượng
+    function Tang(){
+        document.querySelector('.TT-chi-tiet .infor .so-luong .value input').value=parseInt(document.querySelector('.TT-chi-tiet .infor .so-luong .value input').value)+1
+    }
+    function Giam(){
+        if(parseInt(document.querySelector('.TT-chi-tiet .infor .so-luong .value input').value)==1){
+            return
+        }
+        document.querySelector('.TT-chi-tiet .infor .so-luong .value input').value=parseInt(document.querySelector('.TT-chi-tiet .infor .so-luong .value input').value)-1
+    }
+    //Thêm vào giỏ
+    document.querySelector('.TT-chi-tiet .infor .them-gio-hang .gio-hang').onclick=function(){
+        listPhone=['phone1','phone2','phone3','phone4','phone5']
+        for (var i=0;i<listPhone.length;i++){
+            if((document.querySelector('.TT-chi-tiet .content').classList)[1]==listPhone[i]){
+                cout_shopping_cart=parseInt(document.querySelector('.head-search .cout-shopping-cart').innerHTML)
+                soLuong=parseInt(document.querySelector('.TT-chi-tiet .infor .so-luong .value input').value)
+                document.querySelector('.head-search .cout-shopping-cart').innerHTML=cout_shopping_cart+soLuong
+                if(document.querySelector('.gio-hang .phone1')!=null){
+                    soLuongPhone=parseInt(document.querySelector('.gio-hang .phone1 .so-luong').innerHTML)
+                    document.querySelector('.gio-hang .phone1 .so-luong').innerHTML=soLuongPhone+soLuong
+                    giaPhoneCapNhat=4990000*(soLuongPhone+soLuong)+'₫'
+                    for (var i = giaPhoneCapNhat.length-1;i>=0;i--){
+                        if (i==giaPhoneCapNhat.length-1){
+                            giaPhoneCapNhat=giaPhoneCapNhat.slice(0,i-3)+'.'+giaPhoneCapNhat.slice(i-3)
+                        }
+                        else if(i==giaPhoneCapNhat.length-1-7){
+                            giaPhoneCapNhat=giaPhoneCapNhat.slice(0,i)+'.'+giaPhoneCapNhat.slice(i)
+                        }
+                    }
+                    document.querySelector('.gio-hang .phone1 .gia').innerHTML=giaPhoneCapNhat
+                }
+                else{
+                    document.querySelector('.gio-hang').innerHTML=document.querySelector('.gio-hang').innerHTML+'<div class="row phone1"><div class="col san-pham">Xiaomi Redmi Note 7 (64GB)</div><div class="col gia">4.990.000₫</div><div class="col so-luong">1</div><div class="col chon">Xóa</div></div>'
+                }
+                document.querySelector('.TT-chi-tiet').style.display='none'
+                alert("Đã thêm vào giỏ hàng")
+                CapNhatTongTien()
+            }
+        }
+    }
+
 //mobile
 function TimKiemSanPhamMobile(){
     var value_mobile=document.querySelector('#txtSearch-mobile').value
