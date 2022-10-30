@@ -184,42 +184,146 @@ function XoaClassPhone(){
 displayAlls[0].onclick=function(){
     document.querySelector('.TT-chi-tiet').style.display='block'
     XoaClassPhone()
+
     document.querySelector('.TT-chi-tiet .content').classList.add('phone1')
+    document.querySelector('.TT-chi-tiet .img-head img').src='./img/phone1/1.jpg'
+    document.querySelector('.TT-chi-tiet .infor h1').innerHTML="Xiaomi Redmi Note 7 (64GB)"
+    document.querySelector('.TT-chi-tiet .infor .gia .gia-left').innerHTML="4.990.000₫"
+    document.querySelector('#thuonghieu').innerHTML="Xiaomi"
+    document.querySelector('.TT-chi-tiet .infor .mau .chon1').innerHTML="Xanh Da Trời"
+    document.querySelector('.TT-chi-tiet .infor .mau .chon2').innerHTML="Xanh Khổng Tước"
+    document.querySelector('.TT-chi-tiet .infor .mau .chon3').innerHTML="Xám Hoa Cương"
+    anhS=document.querySelectorAll('.TT-chi-tiet .img-list img')
+    for(var i=0;i<5;i++){
+        src='./img/phone1/'+(i+1).toString(10)+'.jpg'
+        anhS[i].src=src
+    }
 }
 displayAlls[1].onclick=function(){
     document.querySelector('.TT-chi-tiet').style.display='block'
     XoaClassPhone()
+
     document.querySelector('.TT-chi-tiet .content').classList.add('phone2')
+    document.querySelector('.TT-chi-tiet .img-head img').src='./img/phone2/1.jpg'
+    document.querySelector('.TT-chi-tiet .infor h1').innerHTML="Samsung Galaxy A50 (64GB)"
+    document.querySelector('.TT-chi-tiet .infor .gia .gia-left').innerHTML="6.990.000₫"
+    document.querySelector('#thuonghieu').innerHTML="Samsung"
+    document.querySelector('.TT-chi-tiet .infor .mau .chon1').innerHTML="Đen Tinh Vân"
+    document.querySelector('.TT-chi-tiet .infor .mau .chon2').innerHTML="Xanh Dương Xỉ"
+    document.querySelector('.TT-chi-tiet .infor .mau .chon3').innerHTML="Đồng Ánh Hồng"
+    anhS=document.querySelectorAll('.TT-chi-tiet .img-list img')
+    for(var i=0;i<5;i++){
+        src='./img/phone2/'+(i+1).toString(10)+'.jpg'
+        anhS[i].src=src
+    }
 }
 displayAlls[2].onclick=function(){
     document.querySelector('.TT-chi-tiet').style.display='block'
     XoaClassPhone()
+
     document.querySelector('.TT-chi-tiet .content').classList.add('phone3')
+    document.querySelector('.TT-chi-tiet .img-head img').src='./img/phone3/1.jpg'
+    document.querySelector('.TT-chi-tiet .infor h1').innerHTML="iPhone 6s Plus (32GB)"
+    document.querySelector('.TT-chi-tiet .infor .gia .gia-left').innerHTML="9.990.000₫"
+    document.querySelector('#thuonghieu').innerHTML="Iphone"
+    document.querySelector('.TT-chi-tiet .infor .mau .chon1').innerHTML="Màu Xám"
+    document.querySelector('.TT-chi-tiet .infor .mau .chon2').innerHTML="Màu Bạc"
+    document.querySelector('.TT-chi-tiet .infor .mau .chon3').innerHTML="Màu Vàng Hồng"
+    anhS=document.querySelectorAll('.TT-chi-tiet .img-list img')
+    for(var i=0;i<5;i++){
+        src='./img/phone3/'+(i+1).toString(10)+'.jpg'
+        anhS[i].src=src
+    }
 }
 displayAlls[3].onclick=function(){
     document.querySelector('.TT-chi-tiet').style.display='block'
     XoaClassPhone()
+
     document.querySelector('.TT-chi-tiet .content').classList.add('phone4')
+    document.querySelector('.TT-chi-tiet .img-head img').src='./img/phone4/1.jpg'
+    document.querySelector('.TT-chi-tiet .infor h1').innerHTML="Samsung Galaxy A10"
+    document.querySelector('.TT-chi-tiet .infor .gia .gia-left').innerHTML="3.090.000₫"
+    document.querySelector('#thuonghieu').innerHTML="Samsung"
+    document.querySelector('.TT-chi-tiet .infor .mau .chon1').innerHTML="Đen Cá Tính"
+    document.querySelector('.TT-chi-tiet .infor .mau .chon2').innerHTML="Cam Nhiệt Huyết"
+    document.querySelector('.TT-chi-tiet .infor .mau .chon3').innerHTML="Xanh năng động"
+    anhS=document.querySelectorAll('.TT-chi-tiet .img-list img')
+    for(var i=0;i<5;i++){
+        src='./img/phone4/'+(i+1).toString(10)+'.jpg'
+        anhS[i].src=src
+    }
 }
 displayAlls[4].onclick=function(){
     document.querySelector('.TT-chi-tiet').style.display='block'
     XoaClassPhone()
+
     document.querySelector('.TT-chi-tiet .content').classList.add('phone5')
+    document.querySelector('.TT-chi-tiet .img-head img').src='./img/phone5/1.jpg'
+    document.querySelector('.TT-chi-tiet .infor h1').innerHTML="OPPO A5s"
+    document.querySelector('.TT-chi-tiet .infor .gia .gia-left').innerHTML="3.990.000₫"
+    document.querySelector('#thuonghieu').innerHTML="OPPO"
+    document.querySelector('.TT-chi-tiet .infor .mau .chon1').innerHTML="Xanh Thời Thượng"
+    document.querySelector('.TT-chi-tiet .infor .mau .chon2').innerHTML="Đen Mạnh Mẽ"
+    document.querySelector('.TT-chi-tiet .infor .mau .chon3').innerHTML="Xanh Đam Mê"
+    anhS=document.querySelectorAll('.TT-chi-tiet .img-list img')
+    for(var i=0;i<5;i++){
+        src='./img/phone5/'+(i+1).toString(10)+'.jpg'
+        anhS[i].src=src
+    }
 }
 displayAlls[5].onclick=function(){
     document.querySelector('.TT-chi-tiet').style.display='block'
     XoaClassPhone()
+
     document.querySelector('.TT-chi-tiet .content').classList.add('phone6')
+    document.querySelector('.TT-chi-tiet .img-head img').src='./img/phone6/1.jpg'
+    document.querySelector('.TT-chi-tiet .infor h1').innerHTML="Vivo Y15"
+    document.querySelector('.TT-chi-tiet .infor .gia .gia-left').innerHTML="4.990.000₫"
+    document.querySelector('#thuonghieu').innerHTML="Vivo"
+    document.querySelector('.TT-chi-tiet .infor .mau .chon1').innerHTML="Xanh Hồng"
+    document.querySelector('.TT-chi-tiet .infor .mau .chon2').innerHTML="Đen"
+    document.querySelector('.TT-chi-tiet .infor .mau .chon3').innerHTML="Xanh Nhạt"
+    anhS=document.querySelectorAll('.TT-chi-tiet .img-list img')
+    for(var i=0;i<5;i++){
+        src='./img/phone6/'+(i+1).toString(10)+'.jpg'
+        anhS[i].src=src
+    }
 }
 displayAlls[6].onclick=function(){
     document.querySelector('.TT-chi-tiet').style.display='block'
     XoaClassPhone()
+
     document.querySelector('.TT-chi-tiet .content').classList.add('phone7')
+    document.querySelector('.TT-chi-tiet .img-head img').src='./img/phone7/1.jpg'
+    document.querySelector('.TT-chi-tiet .infor h1').innerHTML="iPhone Xs Max (64GB)"
+    document.querySelector('.TT-chi-tiet .infor .gia .gia-left').innerHTML="29.990.000₫"
+    document.querySelector('#thuonghieu').innerHTML="Iphone"
+    document.querySelector('.TT-chi-tiet .infor .mau .chon1').innerHTML="XS Max / Clear"
+    document.querySelector('.TT-chi-tiet .infor .mau .chon2').innerHTML="XS / Clear"
+    document.querySelector('.TT-chi-tiet .infor .mau .chon3').innerHTML="XR / Clear"
+    anhS=document.querySelectorAll('.TT-chi-tiet .img-list img')
+    for(var i=0;i<5;i++){
+        src='./img/phone7/'+(i+1).toString(10)+'.jpg'
+        anhS[i].src=src
+    }
 }
 displayAlls[7].onclick=function(){
     document.querySelector('.TT-chi-tiet').style.display='block'
     XoaClassPhone()
+
     document.querySelector('.TT-chi-tiet .content').classList.add('phone8')
+    document.querySelector('.TT-chi-tiet .img-head img').src='./img/phone8/1.jpg'
+    document.querySelector('.TT-chi-tiet .infor h1').innerHTML="iPhone X (256GB)"
+    document.querySelector('.TT-chi-tiet .infor .gia .gia-left').innerHTML="29.990.000₫"
+    document.querySelector('#thuonghieu').innerHTML="Iphone"
+    document.querySelector('.TT-chi-tiet .infor .mau .chon1').innerHTML="Bạc"
+    document.querySelector('.TT-chi-tiet .infor .mau .chon2').innerHTML="Xám"
+    document.querySelector('.TT-chi-tiet .infor .mau .chon3').innerHTML="Đen"
+    anhS=document.querySelectorAll('.TT-chi-tiet .img-list img')
+    for(var i=0;i<5;i++){
+        src='./img/phone8/'+(i+1).toString(10)+'.jpg'
+        anhS[i].src=src
+    }
 }
 //Thêm vào giỏ hàng
 function CapNhatTongTien(){
@@ -455,13 +559,14 @@ for (var i=1;i<sanPhams.length;i++){
 // Thông tin chi tiết
     //Chọn ảnh
     anhPhoneS=document.querySelectorAll('.TT-chi-tiet .img-list>div>div')
+    srcAnhPhoneS=document.querySelectorAll('.TT-chi-tiet .img-list>div>div>img')
     anhPhoneS[0].onclick=function(){
         anhPhoneS[0].setAttribute("style","border: 2px solid #ee4d2d;")
         anhPhoneS[1].setAttribute("style","border: none")
         anhPhoneS[2].setAttribute("style","border: none")
         anhPhoneS[3].setAttribute("style","border: none")
         anhPhoneS[4].setAttribute("style","border: none")
-        document.querySelector('.TT-chi-tiet .img .img-head img').src='./img/Xiaomi/1.jpg'
+        document.querySelector('.TT-chi-tiet .img .img-head img').src=srcAnhPhoneS[0].src
     }
     anhPhoneS[1].onclick=function(){
         anhPhoneS[0].setAttribute("style","border: none")
@@ -469,7 +574,7 @@ for (var i=1;i<sanPhams.length;i++){
         anhPhoneS[2].setAttribute("style","border: none")
         anhPhoneS[3].setAttribute("style","border: none")
         anhPhoneS[4].setAttribute("style","border: none")
-        document.querySelector('.TT-chi-tiet .img .img-head img').src='./img/Xiaomi/2.jpg'
+        document.querySelector('.TT-chi-tiet .img .img-head img').src=srcAnhPhoneS[1].src
     }
     anhPhoneS[2].onclick=function(){
         anhPhoneS[0].setAttribute("style","border: none;")
@@ -477,7 +582,7 @@ for (var i=1;i<sanPhams.length;i++){
         anhPhoneS[2].setAttribute("style","border: 2px solid #ee4d2d")
         anhPhoneS[3].setAttribute("style","border: none")
         anhPhoneS[4].setAttribute("style","border: none")
-        document.querySelector('.TT-chi-tiet .img .img-head img').src='./img/Xiaomi/3.jpg'
+        document.querySelector('.TT-chi-tiet .img .img-head img').src=srcAnhPhoneS[2].src
     }
     anhPhoneS[3].onclick=function(){
         anhPhoneS[0].setAttribute("style","border: none;")
@@ -485,7 +590,7 @@ for (var i=1;i<sanPhams.length;i++){
         anhPhoneS[2].setAttribute("style","border: none")
         anhPhoneS[3].setAttribute("style","border: 2px solid #ee4d2d")
         anhPhoneS[4].setAttribute("style","border: none")
-        document.querySelector('.TT-chi-tiet .img .img-head img').src='./img/Xiaomi/4.jpg'
+        document.querySelector('.TT-chi-tiet .img .img-head img').src=srcAnhPhoneS[3].src
     }
     anhPhoneS[4].onclick=function(){
         anhPhoneS[0].setAttribute("style","border: none")
@@ -493,7 +598,7 @@ for (var i=1;i<sanPhams.length;i++){
         anhPhoneS[2].setAttribute("style","border: none")
         anhPhoneS[3].setAttribute("style","border: none")
         anhPhoneS[4].setAttribute("style","border: 2px solid #ee4d2d;")
-        document.querySelector('.TT-chi-tiet .img .img-head img').src='./img/Xiaomi/5.jpg'
+        document.querySelector('.TT-chi-tiet .img .img-head img').src=srcAnhPhoneS[4].src
     }
     //Chọn Màu Sắc
     mauSacS=document.querySelectorAll('.TT-chi-tiet .infor .mau .chon')
@@ -501,19 +606,19 @@ for (var i=1;i<sanPhams.length;i++){
         mauSacS[0].setAttribute("style","color: #ee4d2d;border: #ee4d2d 1px solid;")
         mauSacS[1].setAttribute("style","color: #757575;border: 1px solid rgba(0,0,0,.09);")
         mauSacS[2].setAttribute("style","color: #757575;border: 1px solid rgba(0,0,0,.09);")
-        document.querySelector('.TT-chi-tiet .img .img-head img').src='./img/Xiaomi/2.jpg'
+        document.querySelector('.TT-chi-tiet .img .img-head img').src=srcAnhPhoneS[1].src
     }
     mauSacS[1].onclick=function(){
         mauSacS[1].setAttribute("style","color: #ee4d2d;border: #ee4d2d 1px solid;")
         mauSacS[0].setAttribute("style","color: #757575;border: 1px solid rgba(0,0,0,.09);")
         mauSacS[2].setAttribute("style","color: #757575;border: 1px solid rgba(0,0,0,.09);")
-        document.querySelector('.TT-chi-tiet .img .img-head img').src='./img/Xiaomi/3.jpg'
+        document.querySelector('.TT-chi-tiet .img .img-head img').src=srcAnhPhoneS[2].src
     }
     mauSacS[2].onclick=function(){
         mauSacS[2].setAttribute("style","color: #ee4d2d;border: #ee4d2d 1px solid;")
         mauSacS[1].setAttribute("style","color: #757575;border: 1px solid rgba(0,0,0,.09);")
         mauSacS[0].setAttribute("style","color: #757575;border: 1px solid rgba(0,0,0,.09);")
-        document.querySelector('.TT-chi-tiet .img .img-head img').src='./img/Xiaomi/4.jpg'
+        document.querySelector('.TT-chi-tiet .img .img-head img').src=srcAnhPhoneS[3].src
     }
     //tăng giảm số lượng
     function Tang(){
@@ -527,34 +632,64 @@ for (var i=1;i<sanPhams.length;i++){
     }
     //Thêm vào giỏ
     document.querySelector('.TT-chi-tiet .infor .them-gio-hang .gio-hang').onclick=function(){
-        listPhone=['phone1','phone2','phone3','phone4','phone5']
+        listPhone=['phone1','phone2','phone3','phone4','phone5','phone6','phone7','phone8']
         for (var i=0;i<listPhone.length;i++){
             if((document.querySelector('.TT-chi-tiet .content').classList)[1]==listPhone[i]){
+                gio_hang_selector='.gio-hang .phone'+(i+1).toString(10)
+                so_luong_selector='.gio-hang .phone'+(i+1).toString(10)+' .so-luong'
+                gia_selector='.gio-hang .phone'+(i+1).toString(10)+' .gia'
                 cout_shopping_cart=parseInt(document.querySelector('.head-search .cout-shopping-cart').innerHTML)
                 soLuong=parseInt(document.querySelector('.TT-chi-tiet .infor .so-luong .value input').value)
                 document.querySelector('.head-search .cout-shopping-cart').innerHTML=cout_shopping_cart+soLuong
-                if(document.querySelector('.gio-hang .phone1')!=null){
-                    soLuongPhone=parseInt(document.querySelector('.gio-hang .phone1 .so-luong').innerHTML)
-                    document.querySelector('.gio-hang .phone1 .so-luong').innerHTML=soLuongPhone+soLuong
-                    giaPhoneCapNhat=4990000*(soLuongPhone+soLuong)+'₫'
-                    for (var i = giaPhoneCapNhat.length-1;i>=0;i--){
-                        if (i==giaPhoneCapNhat.length-1){
-                            giaPhoneCapNhat=giaPhoneCapNhat.slice(0,i-3)+'.'+giaPhoneCapNhat.slice(i-3)
+                var donGia=0
+                if(i+1==1){
+                    donGia=4990000
+                }else if(i+1==2){
+                    donGia=6990000
+                }else if(i+1==3){
+                    donGia=9990000
+                }else if(i+1==4){
+                    donGia=3090000
+                }else if(i+1==5){
+                    donGia=3990000
+                }else if(i+1==6){
+                    donGia=4990000
+                }else if(i+1==7){
+                    donGia=29990000
+                }else if(i+1==8){
+                    donGia=29990000
+                }
+                if(document.querySelector(gio_hang_selector)!=null){
+                    soLuongPhone=parseInt(document.querySelector(so_luong_selector).innerHTML)
+                    document.querySelector(so_luong_selector).innerHTML=soLuongPhone+soLuong
+                    giaPhoneCapNhat=donGia*(soLuongPhone+soLuong)+'₫'
+                    for (var j = giaPhoneCapNhat.length-1;j>=0;j--){
+                        if (j==giaPhoneCapNhat.length-1){
+                            giaPhoneCapNhat=giaPhoneCapNhat.slice(0,j-3)+'.'+giaPhoneCapNhat.slice(j-3)
                         }
-                        else if(i==giaPhoneCapNhat.length-1-7){
-                            giaPhoneCapNhat=giaPhoneCapNhat.slice(0,i)+'.'+giaPhoneCapNhat.slice(i)
+                        else if(j==giaPhoneCapNhat.length-1-7){
+                            giaPhoneCapNhat=giaPhoneCapNhat.slice(0,j)+'.'+giaPhoneCapNhat.slice(j)
                         }
                     }
-                    document.querySelector('.gio-hang .phone1 .gia').innerHTML=giaPhoneCapNhat
+                    document.querySelector(gia_selector).innerHTML=giaPhoneCapNhat
                 }
                 else{
-                    document.querySelector('.gio-hang').innerHTML=document.querySelector('.gio-hang').innerHTML+'<div class="row phone1"><div class="col san-pham">Xiaomi Redmi Note 7 (64GB)</div><div class="col gia">4.990.000₫</div><div class="col so-luong">1</div><div class="col chon">Xóa</div></div>'
+                    giaPhoneCapNhat=donGia*soLuong+'₫'
+                    for (var j = giaPhoneCapNhat.length-1;j>=0;j--){
+                        if (j==giaPhoneCapNhat.length-1){
+                            giaPhoneCapNhat=giaPhoneCapNhat.slice(0,j-3)+'.'+giaPhoneCapNhat.slice(j-3)
+                        }
+                        else if(j==giaPhoneCapNhat.length-1-7){
+                            giaPhoneCapNhat=giaPhoneCapNhat.slice(0,j)+'.'+giaPhoneCapNhat.slice(j)
+                        }
+                    }
+                    document.querySelector('.gio-hang').innerHTML=document.querySelector('.gio-hang').innerHTML+'<div class="row phone1"><div class="col san-pham">Xiaomi Redmi Note 7 (64GB)</div><div class="col gia">'+giaPhoneCapNhat+'</div><div class="col so-luong">'+soLuong+'</div><div class="col chon">Xóa</div></div>'
                 }
-                document.querySelector('.TT-chi-tiet').style.display='none'
-                alert("Đã thêm vào giỏ hàng")
-                CapNhatTongTien()
             }
         }
+        document.querySelector('.TT-chi-tiet').style.display='none'
+        CapNhatTongTien()
+        alert("Đã thêm vào giỏ hàng")
     }
 
 //mobile
