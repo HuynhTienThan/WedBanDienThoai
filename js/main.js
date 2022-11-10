@@ -16,7 +16,7 @@ TaiKhoan.onclick = function(){
 var slide = document.querySelector('#slide')
 var index=0
 chuyenDoi = function (){
-    var a = ["../img/slide2.png","../img/slide3.png","../img/slide4.png","../img/slide0.png","../img/slide1.png",]
+    var a = ["img/slide2.png","img/slide3.png","img/slide4.png","img/slide0.png","img/slide1.png",]
     slide.src=a[index]
     index++
     if(index==4){
